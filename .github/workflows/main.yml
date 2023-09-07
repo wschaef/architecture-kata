@@ -1,0 +1,17 @@
+- name: .drawio rendering action
+  # You may pin to the exact commit or the version.
+  # uses: tbscompany/render-drawio-action@159cefa647e7d813edd955f94ca73cbe61dee4d1
+  uses: tbscompany/render-drawio-action@v1.2.2
+  with:
+    # A comma-separated list of the formats to render. All supported formats: `svg,pdf,png,jpg`
+    formats: # optional, default is svg
+    # A comma-separated list of directories to consider when searching for `.drawio` files
+    sub-dirs: # optional, default is .
+    # A comma-separated list of directories to skip when searching for `.drawio` files
+    skip-dirs: # optional, default is .git
+    # A comma-separated list of specific files to convert, in the form `dest-file=src-file`
+    files: # optional, default is =
+    # Specify the log level, recognized levels are `info` and `debug`
+    log-level: # optional, default is info
+    # Specify the root directory to use when searching for `.drawio` files
+    root-dir: # optional, default is /files
