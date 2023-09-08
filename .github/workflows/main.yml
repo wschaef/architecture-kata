@@ -1,9 +1,25 @@
-- name: ".drawio rendering action"
-  uses: tbscompany/render-drawio-action@v1.2.2
-  with:
-    formats: svg,pdf,png,jpg
-    sub-dirs: .
-    skip-dirs: .git
-    files:
-    log-level: info
-    root-dir: /files
+name: .drawio rendering action
+
+on:
+  push:
+    branches:
+      - main
+  
+jobs:
+  render_drawio:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Render .drawio Files
+        uses: tbscompany/render-drawio-action@v1.2.2
+        with:
+          formats: svg,pdf,png,jpg
+          sub-dirs: .
+          skip-dirs: .git
+          files: '*.drawio'
+          log-level: info
+          root-dir: /files
+
