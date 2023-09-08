@@ -1,9 +1,9 @@
-- name: .drawio rendering action
+- name: ".drawio rendering action"
   uses: tbscompany/render-drawio-action@v1.2.2
   with:
-    formats: svg,pdf,png,jpg  # Provide the desired formats to render
-    sub-dirs: .              # Specify the directories to consider when searching for .drawio files
-    skip-dirs: .git          # Specify the directories to skip when searching for .drawio files
-    files:                   # Specify specific files to convert in the form 'dest-file=src-file'
-    log-level: info          # Specify the log level, recognized levels are 'info' and 'debug'
-    root-dir: /files         # Specify the root directory to use when searching for .drawio files
+    formats: svg,pdf,png,jpg
+    sub-dirs: .
+    skip-dirs: .git
+    files:
+    log-level: info
+    root-dir: /files
