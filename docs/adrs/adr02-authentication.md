@@ -1,7 +1,7 @@
 
-# ADR: User Onboarding and Authentication Strategy
+# ADR 2: User Onboarding and Authentication Strategy
 
-**Status**: Proposed / Accepted / Superseded
+**Status**: Accepted
 
 **Date**: 11th September 2023
 
@@ -9,8 +9,9 @@
 
 - [x] @wschaef
 - [x] @uweTelco
-- [ ] @slookin
-- [ ] @mauermbq
+- [x] @slookin
+- [x] @mauermbq
+- [x] @ilia
 
 ## Context
 

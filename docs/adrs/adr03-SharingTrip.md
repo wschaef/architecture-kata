@@ -1,14 +1,15 @@
-# ADR: Share Trips by Reference
+# ADR3: Share Trips by Reference
 
-**Status**: Proposed / Accepted / Superseded
+**Status**: Accepted
 
 **Date**: 11th September 2023
 
 **Stakeholders**:
 - [x] @wschaef
 - [x] @uweTelco
-- [ ] @slookin
-- [ ] @mauermbq
+- [x] @slookin
+- [x] @mauermbq
+- [x] @ilia
 
 ## Context
 

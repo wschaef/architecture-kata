@@ -1,15 +1,16 @@
-# ADR Analytics make of buy
+# ADR5: Analytics make of buy
 
-**Status** : proposed / accepted / superseded
+**Status** : Accepted 
 
 **Date** : 11.09.2023
 
-**Stakeholders**
+**Stakeholders**;
 
-- [ ] @wschaef
+- [x] @wschaef
 - [x] @uweTelco
-- [ ] @slookin
+- [x] @slookin
 - [x] @mauermbq
+- [x] @ilia
 
 ## Context
 
@@ -42,7 +43,7 @@ The critical decision criteria include:
 - Use Availab Frontend technologies for analytical purposes (Looker), as long as not already one exists in the company
 - Use Google Cloud Dataflow to create a data pipeline that reads from Cloud SQL and writes to BigQuery. Eventually direct export is sufficinet for MVP. This method is particularly useful if you need to perform transformations on the data before it gets to BigQuery. (to be clarified)
 
-### Ratioanle for Serverless Data Warehouse
+### Rationale for Serverless Data Warehouse
 
 By reducing the overhead associated with infrastructure management and offering powerful tools and integrations out-of-the-box, serverless data warehouses like BigQuery enable businesses to focus on data analytics and insights rather than the intricacies of data storage and management.
 
